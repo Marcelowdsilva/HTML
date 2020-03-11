@@ -1,0 +1,294 @@
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+        overflow: hidden;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: #222;
+        text-align: center;
+        background-blend-mode: darken;
+        background-image: url(k.jpg)
+    }
+
+    body:before{
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        position: fixed;
+        overflow: hidden;
+        box-shadow: inset 0 0 10em rgba(0,0,0,0.1);
+        animation: flicker 32s linear;
+    }
+    @keyframes flicker{
+        0%{
+            background: white;
+            opacity: 0;
+        }
+
+        10%{
+            background: white;
+            opacity: 0;
+        }
+        
+        10.1%{
+            background: white;
+            opacity: 1;
+        }
+        
+        10.2%{
+            background: white;
+            opacity: 0;
+        }
+        
+        23%{
+            background: white;
+            opacity: 0;
+        }
+
+        23.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        23.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        35%{
+            background: white;
+            opacity: 0;
+        }
+
+        35.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        35.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        48%{
+            background: white;
+            opacity: 0;
+        }
+
+        48.1%{
+            background: white;
+            opacity: 1;
+        }
+        48.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        60%{
+            background: white;
+            opacity: 0;
+        }
+        60.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        60.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        72%{
+            background: white;
+            opacity: 0;
+        }
+
+        72.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        72.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        85%{
+            background: white;
+            opacity: 0;
+        }
+
+        85.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        85.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        99%{
+            background: white;
+            opacity: 0;
+        }
+
+        99.1%{
+            background: white;
+            opacity: 1;
+        }
+
+        99.2%{
+            background: white;
+            opacity: 0;
+        }
+
+        100%{
+            background: white;
+            opacity: 0;
+        }
+    }
+
+    #teste{
+        font-size: 4em;
+        margin: 0 auto;
+        height: 100vh;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    #teste span{
+        display: block;
+        font-size: .4em;
+        opacity: .8;
+    }
+
+    #teste div{
+        position: absolute;
+        margin: 2vh 0;
+        opacity: 0;
+        left: 10vw;
+        width: 80vw;
+        animation: switch 32s linear;
+    }
+
+    #teste div:nth-child(2){
+        animation-delay: 4s;
+    }
+
+    #teste div:nth-child(3){
+        animation-delay: 8s;
+    }
+
+    #teste div:nth-child(4){
+        animation-delay: 12s;
+    }
+
+    #teste div:nth-child(5){
+        animation-delay: 16s;
+    }
+
+    #teste div:nth-child(6){
+        animation-delay: 20s;
+    }
+
+    #teste div:nth-child(7){
+        animation-delay: 24s;
+    }
+
+    #teste div:nth-child(8){
+        animation-delay: 28s;
+    }
+    
+    @keyframes switch{
+        0%{
+            opacity: 0;
+            filter: blur(3px);
+            transform: scale(.95);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.2);
+        }
+        3%{
+            opacity: 0.7;
+            filter: blur(2px);
+            transform: scale(1);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.1);
+        }
+        6%{
+            opacity: 0.7;
+            filter: blur(2px);
+            transform: scale(1);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        10%{
+            opacity: 0.7;
+            filter: blur(3px);
+            transform: scale(1.1);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.1);
+            color:#000;
+        }
+        10.1%{
+            opacity: 0.8;
+            filter: blur(2px);
+            transform: scale(2);
+            text-shadow: -40px -142px 2px rgba(0, 0, 0, 0.1);
+            color:#fff;
+        }
+        10.2%{
+            opacity: 0.8;
+            filter: blur(2px);
+            transform: scale(2);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.1);
+            color:#fff;
+        }
+        11.1%{
+            opacity: 0.8;
+            filter: blur(2px);
+            transform: scale(2);
+            text-shadow: 40px 42px 2px rgba(0, 0, 0, 0.1);
+            color:#111;
+        }
+
+
+        11.2%{
+            opacity: 0.7;
+            filter: blur(2px);
+            transform: scale(2);
+            text-shadow: 90px 52px 2px rgba(0, 0, 0, 0.1);
+            color:#fff;
+        }
+
+        12%{
+            opacity: 0.7;
+            filter: blur(5px);
+            transform: scale(1.1);
+            text-shadow: 90px 52px 2px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        12.1%{
+            opacity: 0.7;
+            filter: blur(5px);
+            transform: scale(1.1);
+            text-shadow: -90px -52px 2px rgba(0, 0, 0, 0);
+            color:black;
+        }
+        13%{
+            opacity: 0;
+            filter: blur(3px);
+            transform: scale(1);
+            text-shadow: 40px 42px 2px;
+            color:black;
+        }
+
+    }
